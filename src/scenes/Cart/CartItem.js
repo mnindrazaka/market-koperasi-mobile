@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Image, Button, Picker } from 'react-native'
+import { Image, Button } from 'react-native'
 import PropTypes from 'prop-types'
 
 import { Grid, Col } from 'react-native-easy-grid'
@@ -25,13 +25,7 @@ class CartItem extends Component {
 
           <Grid>
             <Col>
-              <Picker selectedValue="1">
-                <Picker.Item label="1" value="1" />
-                <Picker.Item label="2" value="2" />
-                <Picker.Item label="3" value="3" />
-                <Picker.Item label="4" value="4" />
-                <Picker.Item label="5" value="5" />
-              </Picker>
+              <TextInput keyboardType="number-pad" value="1" />
             </Col>
             <Col>
               <Button title="Hapus" />

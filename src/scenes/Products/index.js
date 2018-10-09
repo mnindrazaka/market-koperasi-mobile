@@ -18,7 +18,7 @@ class Products extends Component {
         description: 'Deskripsi produk ditampilkan disini'
       },
       {
-        title: 'Krayon Mewarnai',
+        title: 'Krayon Warna',
         description: 'Deskripsi produk ditampilkan disini'
       },
       {
@@ -32,13 +32,19 @@ class Products extends Component {
     ]
   }
 
+  componentDidMount() {
+    console.log('yey')
+  }
+
   renderItem({ item }) {
     return (
-      <ProductCard
-        title={item.title}
-        description={item.description}
-        onPress={() => this.props.navigation.navigate('ProductDetail')}
-      />
+      <View marginHorizontal={5} marginVertical={5} flex={1}>
+        <ProductCard
+          title={item.title}
+          description={item.description}
+          onPress={() => this.props.navigation.navigate('ProductDetail')}
+        />
+      </View>
     )
   }
 
@@ -48,7 +54,7 @@ class Products extends Component {
 
   render() {
     return (
-      <View>
+      <View padding={5}>
         <FlatList
           data={this.state.data}
           renderItem={data => this.renderItem(data)}
