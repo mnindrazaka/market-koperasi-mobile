@@ -14,11 +14,12 @@ function setColor(color) {
   else if (color == 'secondary') return '#353535'
   else if (color == 'success') return '#779933'
   else if (color == 'warning') return '#ff9800'
-  else if (color == 'error') return '#e51c23'
+  else if (color == 'danger') return '#e51c23'
   else return '#131313'
 }
 
 export default styled(Text)`
   font-size: ${props => setFontSize(props.size)};
   color: ${props => setColor(props.color)};
+  font-weight: ${props => (props.bold ? 'bold' : 'normal')};
 `

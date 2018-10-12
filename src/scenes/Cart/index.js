@@ -12,13 +12,13 @@ class Cart extends Component {
       <ScrollView>
         <Card marginBottom={15}>
           <Card.Content>
-            <Text size="large" marginBottom={15}>
-              Usaha A
+            <Card.Title>Usaha A</Card.Title>
+            <CartItem />
+            <CartItem />
+            <CartItem />
+            <Text size="huge" bold>
+              Rp. 300.000
             </Text>
-
-            <CartItem />
-            <CartItem />
-            <CartItem />
           </Card.Content>
           <Card.Footer>
             <Button title="Bayar" onPress={() => navigate('Checkout')} />
@@ -27,13 +27,13 @@ class Cart extends Component {
 
         <Card marginBottom={15}>
           <Card.Content>
-            <Text size="large" marginBottom={15}>
-              Usaha B
+            <Card.Title>Usaha B</Card.Title>
+            <CartItem />
+            <CartItem />
+            <CartItem />
+            <Text size="huge" bold>
+              Rp. 300.000
             </Text>
-
-            <CartItem />
-            <CartItem />
-            <CartItem />
           </Card.Content>
           <Card.Footer>
             <Button title="Bayar" onPress={() => navigate('Checkout')} />
@@ -42,13 +42,13 @@ class Cart extends Component {
 
         <Card marginBottom={15}>
           <Card.Content>
-            <Text size="large" marginBottom={15}>
-              Usaha C
+            <Card.Title>Usaha C</Card.Title>
+            <CartItem />
+            <CartItem />
+            <CartItem />
+            <Text size="huge" bold>
+              Rp. 300.000
             </Text>
-
-            <CartItem />
-            <CartItem />
-            <CartItem />
           </Card.Content>
           <Card.Footer>
             <Button title="Bayar" onPress={() => navigate('Checkout')} />
